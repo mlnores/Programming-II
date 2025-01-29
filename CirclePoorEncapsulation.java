@@ -1,4 +1,5 @@
-public class CirclePE {
+/* A class for circles, with poor encapsulation */
+public class CirclePoorEncapsulation {
     public double x, y; // center coordinates
     public double r; // radius
 

@@ -1,23 +1,20 @@
-public class CircleGE {
+/* A class for circles, with better encapsulation */
+public class CircleGoodEncapsulation {
     private double x, y, r;
 
-    CircleGE() {
-        x = y = 0;
-        r = 1;
+    CircleGoodEncapsulation() {
+        this(0,0,1);
     }
 
-    CircleGE(double r) {
-        x = y = 0;
-        this.r = r;
+    CircleGoodEncapsulation(double r) {
+        this(0,0,r);
     }
 
-    CircleGE(double x, double y) {
-        this.x = x;
-        this.y = y;
-        r = 1;
+    CircleGoodEncapsulation(double x, double y) {
+        this(x,y,1);
     }
 
-    CircleGE(double x, double y, double r) {
+    CircleGoodEncapsulation(double x, double y, double r) {
         this.x = x;
         this.y = y;
         this.r = r;

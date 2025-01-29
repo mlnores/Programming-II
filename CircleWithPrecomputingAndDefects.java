@@ -1,6 +1,6 @@
 public class CircleWithPrecomputingAndDefects {
     double x, y, r;
-    double perimeter, area;
+    double calculatedPerimeter, calculatedArea;
 
     CircleWithPrecomputingAndDefects() {
         x = y = 0;
@@ -54,16 +54,16 @@ public class CircleWithPrecomputingAndDefects {
     }
 
     public void computeMeasures() {
-        perimeter = 2 * Math.PI * r;
-        area = Math.PI * r * r;
+        calculatedPerimeter = 2 * Math.PI * r;
+        calculatedArea = Math.PI * r * r;
     }
 
     public double perimeter() {
-        return perimeter;
+        return calculatedPerimeter;
     }
 
     public double area() {
-        return area;
+        return calculatedArea;
     }
 
     public boolean contains(double x, double y) {
